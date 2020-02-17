@@ -103,12 +103,12 @@ class MainFragment : Fragment() {
 
             btnCheat.setOnClickListener{
 
-                val questionText = listQuestion[questionIndex].resourceId
+                val question = listQuestion[questionIndex].resourceId
                 val answer = listQuestion[questionIndex].answer.toString();
 
 
                 val cheat = MainFragmentDirections
-                        .actionMainFragmentToCheatFragment(answer, questionText)
+                        .actionMainFragmentToCheatFragment(answer, question)
 
                 view!!.findNavController().navigate(cheat)
             }
@@ -141,7 +141,7 @@ class MainFragment : Fragment() {
     private fun updateView(questionId : Int) {
 
         binding.apply {
-            questionLabel.setText(listQuestion[questionId].resourceId)
+            lblQuestion.setText(listQuestion[questionId].resourceId)
         }
 
     }

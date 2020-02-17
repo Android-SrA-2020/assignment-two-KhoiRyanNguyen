@@ -9,12 +9,12 @@
     <string name="btn_Cheat">CHEAT</string>
     <string name="about_title">About</string>
     <string name="lbl_Title">About</string>
-    <string name="rickimage_desc">rickImage</string>
+
 
 
 
     <string name="cheatText">Welcome to Cheat page</string>
-    <string name="show_answer_button">Cheat</string>
+    <string name="btn_Show">Cheat</string>
 
 
     <string name="question_1">The Rick &amp; Morty That The Show Follows Are Originally From Dimension C-173</string>

@@ -42,14 +42,14 @@ class CheatFragment : Fragment() {
 
         binding.apply {
             //set fields
-            answerLabel.visibility = View.INVISIBLE;
-            answerLabel.text = args.answer.toString()
+            lblAnswer.visibility = View.INVISIBLE;
+            lblAnswer.text = args.answer.toString()
 
-            questionLabel.setText(args.question)
+            lblQuestion.setText(args.question)
 
-            btnCheat.setOnClickListener{ answerLabel.visibility = View.VISIBLE}
+            btnCheat.setOnClickListener{ lblAnswer.visibility = View.VISIBLE}
 
-            cancelButton.setOnClickListener{
+            btnCancel.setOnClickListener{
                 activity!!.onBackPressed()
 
             }

@@ -18,12 +18,12 @@
             android:layout_width="99dp"
             android:layout_height="51dp"
             android:layout_marginStart="88dp"
-            android:text="@string/show_answer_button"
-            app:layout_constraintBaseline_toBaselineOf="@+id/cancel_button"
+            android:text="@string/btn_Show"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn_Cancel"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/answer_label"
+            android:id="@+id/lbl_Answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -35,20 +35,20 @@
             app:layout_constraintBottom_toTopOf="@+id/btn_Cheat"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/question_label" />
+            app:layout_constraintTop_toBottomOf="@+id/lbl_question" />
 
         <Button
-            android:id="@+id/cancel_button"
+            android:id="@+id/btn_Cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="80dp"
             android:text="@android:string/cancel"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/answer_label" />
+            app:layout_constraintTop_toBottomOf="@+id/lbl_Answer" />
 
         <TextView
-            android:id="@+id/question_label"
+            android:id="@+id/lbl_question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -58,7 +58,7 @@
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/answer_label"
+            app:layout_constraintBottom_toTopOf="@+id/lbl_Answer"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
